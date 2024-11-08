@@ -1,13 +1,17 @@
 package org.example;
 
+import static org.assertj.core.api.Assertions.assertThat;
+
 import org.junit.jupiter.api.Test;
 
-public class InventoryTest {
+class InventoryTest {
 
-    private Inventory inventory;
+  private Inventory inventory;
 
-    @Test
-    void addProduct(){
-
-    }
+  @Test
+  void addProduct() {
+    String date = "08/11/2024";
+    inventory.add(date, "Banana");
+    assertThat(inventory.project(date)).contains("Banana");
+  }
 }
