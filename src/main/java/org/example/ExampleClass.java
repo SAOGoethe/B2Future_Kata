@@ -15,7 +15,6 @@ public final class ExampleClass {
     };
   }
 
-  // Test
   public int doSum(int a, int b) {
     return exampleCollaborator.sum(a, b);
   }
